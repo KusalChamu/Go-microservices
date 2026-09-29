@@ -6,13 +6,14 @@ import "fmt"
 
 func main() {
 	
-	var products []string
-	products = append(products, "Laptop","mouse","keyboard")
+	prices:=map[string]float64{
+		"laptop":999.39,
+		"mouse":56.88,
+	}
+	
 
-
-	prices := []float64{19.99,5.99}
-	fmt.Println(prices)
-
-    fmt.Println(products[0:2])
+	for name,price := range prices{
+		fmt.Println(name,price)
+	}
 
 }
