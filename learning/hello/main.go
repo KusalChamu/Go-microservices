@@ -2,13 +2,16 @@ package main
 
 import "fmt"
 
-func main() {
-	shopName := "Go shop"
-	productCount := 3 
 
-	fmt.Println("welcome to",shopName)
-	fmt.Println("we currently sell",productCount,"products")
-	fmt.Printf("%s has %d products",shopName,productCount)
+
+func main() {
+	
+	var products []string
+	products = append(products, "Laptop")
+
+
+	prices := []float64{19.99,5.99}
+	fmt.Println(prices)
 
 
 
